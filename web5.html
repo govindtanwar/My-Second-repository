@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web5</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            width: 100%;
+            height: 3800px;
+            background-color: rgb(222, 219, 219);
+        }
+
+        #box1 {
+            height: 900px;
+            width: 90%;
+            background-color: white;
+            margin-left: 120px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        #box2 {
+            height: 900px;
+            width: 28%;
+            background-color: rgb(233, 90, 38);
+            position: absolute;
+            top: 100px;
+            left: 850px;
+            z-index: 200px;
+
+        }
+
+        #box3 {
+            height: 700px;
+            width: 90%;
+            background-color: #faf7f7;
+            position: relative;
+            top: 200px;
+            left: 35px;
+            z-index: 300px;
+        }
+
+        #box4 {
+            height: 350px;
+            width: 45%;
+            background-color: white;
+            position: relative;
+            top: 0px;
+            left: 10px;
+            z-index: 600px;
+        }
+
+        .a1 {
+            text-decoration-line: underline;
+        }
+
+        .a1:hover {
+            text-decoration-line: none;
+        }
+
+        .a2 {
+            border-radius: 300px;
+            position: relative;
+            top: 70px;
+            left: 40px;
+        }
+
+        .a3 {
+            background-color: rgb(212, 81, 34);
+            border-radius: 400px;
+            height: 107px;
+            width: 107px;
+            position: absolute;
+            top: 1200px;
+            left: 900px;
+        }
+
+        .a4 {
+            background-color: white;
+            border-radius: 400px;
+            height: 501px;
+            width: 501px;
+            position: absolute;
+            top: 1500px;
+            left: 500px;
+
+        }
+
+        .a5 {
+            font-size: 60px;
+            position: relative;
+            top: 300px;
+            left: 0px;
+            font-weight: bolder;
+
+        }
+
+        .a6 {
+            position: relative;
+            top: 360px;
+            left: 15px;
+            font-size: x-large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+
+        }
+
+        .a7 {
+            position: relative;
+            top: 400px;
+            left: 40px;
+            font-size: 20px;
+
+        }
+
+        .a8 {
+            text-decoration: underline rgb(207, 84, 40);
+
+
+        }
+
+        .a8:hover {
+            text-decoration: underline black;
+            color: rgb(207, 84, 40);
+        }
+
+        .a9 {
+            position: relative;
+            height: 50px;
+            width: 190px;
+            top: 450px;
+            left: 40px;
+            background-color: rgb(201, 76, 30);
+            color: white;
+        }
+
+        .s1 {
+            position: relative;
+            top: 700px;
+            left: 100px;
+            border-radius: 370px;
+
+        }
+
+        .s2 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(173, 61, 21);
+            position: relative;
+            top: 20px;
+            left: 870px;
+            border-radius: 100px;
+        }
+
+        .s3 {
+
+            height: 140px;
+            width: 140px;
+            background-color: #f2eeec;
+            position: absolute;
+            top: 2641px;
+            left: 902px;
+            border-radius: 100px;
+
+        }
+
+        .s4 {
+            height: 180px;
+            width: 180px;
+            background-color: rgb(192, 87, 49);
+            position: absolute;
+            top: 3000px;
+            left: 910px;
+            border-radius: 100px;
+
+        }
+
+        .s5 {
+            height: 500px;
+            width: 45%;
+            background-color: white;
+            position: relative;
+            top: 390px;
+            left: 420px;
+
+        }
+
+        .s7 {
+            font-size: 21px;
+            margin: 0px 25px;
+        }
+
+        .s8 {
+            font-size: 40px;
+            padding: 30px 50px;
+        }
+
+        .s6 {
+            font-size: larger;
+            margin: 80px 30px;
+        }
+
+        .s9 {
+            position: relative;
+            top: 280px;
+            left: 480px;
+            height: 60px;
+            width: 200px;
+            background-color: rgb(182, 78, 40);
+            color: white;
+
+        }
+
+        .s9:hover {
+            background-color: black;
+        }
+
+        #aa {
+            text-decoration: underline;
+        }
+
+        #aa:hover {
+            text-decoration: underline;
+        }
+
+        .d1 {
+            height: 1000px;
+            width: 100%;
+            background-color: rgb(229, 94, 45);
+            position: relative;
+        }
+
+        .d2 {
+            height: 450px;
+            width: 40%;
+            background-color: white;
+            font-size: 30px;
+            font-weight: bolder;
+            position: relative;
+            top: 100px;
+            left: 100px;
+
+
+
+        }
+
+        .d3 {
+            height: 50px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            position: relative;
+            top: 25px;
+            left: 20px;
+        }
+
+        .d4 {
+            height: 350px;
+            width: 350px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+            left: 542px;
+            background-color: #fac2a4;
+        }
+
+        .d5 {
+            height: 415px;
+            width: 415px;
+            border-radius: 100%;
+            position: absolute;
+            top: 181px;
+            left: 774px;
+            background-color: aliceblue;
+        }
+
+        .d6 {
+            height: 350px;
+            width: 350px;
+            border-radius: 100%;
+            position: absolute;
+            top: 335px;
+            left: 434px;
+            background-color: #fac2a4;
+
+        }
+
+        .f1 {
+            height: 1880px;
+            width: 100%;
+            background-color: rgb(228, 220, 220);
+        }
+
+        .f2 {
+            position: relative;
+            top: -160px;
+            left: 100px;
+        }
+
+        .f3 {
+            height: 550px;
+            width: 550px;
+            background-color: white;
+            position: relative;
+            top: -480px;
+            left: 600px;
+        }
+
+        .f4 {
+            position: relative;
+            top: 180px;
+            left: 10px;
+            font-size: larger;
+        }
+
+        .f5 {
+            text-decoration: underline;
+        }
+
+        .f5:hover {
+            text-decoration: none;
+        }
+
+        .f6 {
+            position: relative;
+            top: 220px;
+            left: 40px;
+            height: 50px;
+            width: 200px;
+            border-radius: 10px;
+            background-color: rgb(233, 122, 82);
+            color: white;
+        }
+
+        .f6:hover {
+            background-color: rgb(37, 36, 36);
+        }
+
+        .f7 {
+            height: 400px;
+            width: 400px;
+            background-color: white;
+            border-radius: 100%;
+            position: relative;
+            top: -393px;
+            left: 678px;
+        }
+
+        .f8 {
+            height: 550px;
+            width: 550px;
+            background-color: aliceblue;
+            border-radius: 100%;
+            position: relative;
+            top: -400px;
+            left: 150px;
+
+        }
+
+        .f9 {
+            font-size: 50px;
+            font-weight: bold;
+            position: relative;
+            top: 60px;
+            left: 25px;
+        }
+
+        .f10 {
+            font-size: 20px;
+            position: relative;
+            top: 100px;
+            left: -20px;
+
+        }
+
+        .ds {
+            position: relative;
+            top: -900px;
+            left: 80px;
+        }
+
+        .f11 {
+            position: relative;
+            top: -680px;
+            left: 100px;
+            font-size: 30px;
+        }
+
+        .f12 {
+            text-decoration: underline rgb(231, 122, 82);
+            color: black;
+        }
+
+        .f12:hover {
+            text-decoration: underline black;
+            color: rgb(231, 122, 82);
+
+        }
+
+        .f13 {
+            position: relative;
+            top: -600px;
+            left: 100px;
+            height: 60px;
+            width: 200px;
+            background-color: rgb(244, 119, 73);
+            color: white;
+        }
+
+        .f13:hover {
+            background-color: rgb(47, 47, 47);
+        }
+
+        .f14 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(244, 119, 73);
+            border-radius: 100%;
+            position: relative;
+            top: -680px;
+            left: 950px;
+        }
+
+        .g1 {
+            height: 800px;
+            width: 100%;
+            background-color: rgb(244, 119, 73);
+            position: relative;
+
+        }
+
+        .g2 {
+            height: 400px;
+            width: 500px;
+            background-color: rgb(244, 119, 73);
+            display: inline-block;
+            margin: 20px;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+        }
+
+        .g3 {
+            height: 500px;
+            width: 500px;
+            background-color: white;
+            display: inline-block;
+            margin: 20px;
+            position: absolute;
+            top: 100px;
+            left: 600px;
+
+        }
+        .h1{
+            height: 300px;
+            width: 100%;
+            background-color: rgb(47, 45, 45);
+        }
+        .max {
+            color: rgb(164, 222, 245);
+            text-decoration-line: underline;
+        }
+
+        .max:hover {
+            color: grey;
+            text-decoration-line: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"><img src="A3.jpg" alt="" width="1100px"></div>
+        <div class="box" id="box4">
+            <div style="font-size:x-large; padding-top:20px; margin-left: 50px;">WHAT WE DO </div>
+            <h1 style="font-size:60px; position: relative;
+            top: 10px; left: 23px;">Architectural, interior design</h1>
+            <div style="font-size: 25px;position: relative; top: 25px;
+            left: 40px;">Image from <span class="a1">Freepik</span></div>
+        </div>
+
+        <div><img src="A5.jpg" alt="" width="500px" class="a2"></div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+
+        <div class="a5">The Building Company</div>
+        <div class="a6">Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A lacus vestibulum
+            sed arcu non. Dolor magna <br> <br> eget est lorem ipsum dolor sit amet consectetur. Mauris pellentesque
+            pulvinar pellentesque habitant morbi tristique <br> <br> senectus. Nec feugiat nisl pretium fusce id. Justo
+            laoreet sit amet cursus sit amet. Porta non pulvinar neque laoreet <br> <br> suspendisse interdum
+            consectetur libero.</div>
+        <br>
+        <div class="a7">Image from <span class="a8">Freepik</span></div>
+
+        <button class="a9">LEARN MORE</button>
+        <br><br>
+        <div><img src="A1.jpg" alt="" width="650px" class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+        <div class="s4"></div>
+        <div class="s5">
+            <h1 class="s8">Our building projects</h1>
+            <p class="s7">Elit ut aliquam purus sit amet luctus venenatis. <br> Ridiculus mus mauris vitae ultricies leo
+                integer <br> malesuada. Massa enim nec dui nunc mattis enim. <br> Sagittis vitae et leo duis ut. Lacus
+                suspendisse faucibus interdum.</p>
+            <div class="s6">Images from <span id="aa">Freepik</span></div>
+        </div>
+        <button class="s9">LEARN MORE</button>
+
+
+    </div>
+
+    <div class="d1">
+        <div class="d4"></div>
+        <div class="d5"><img src="A5.jpg" alt="" width="415px" style="border-radius: 100%;"></div>
+        <div class="d2">
+            <h1 style="padding-left: 20px;">National construction company</h1>
+            <div style="font-size:large; font-weight: 100; position: relative;
+            top: 30px;
+            left: 20px;">Image from <span class="a1">Freepik</span></div>
+            <button class="d3" style="position: relative;
+              top: 80px;left: 20px;">CONTACT US</button>
+            <div class="d6"><img src="A3.jpg" alt="" width="350px" height="350px" style="border-radius: 100%;"></div>
+        </div>
+
+
+    </div>
+    <div class="f1">
+        <div class="f2"><img src="a11.jpg" alt="" width="800px"></div>
+        <div class="f3">
+            <h1 style="font-size:50px; text-align: center;position: relative;top: 30px;">Building Expertise</h1>
+            <p style="font-size: larger; position: relative;top: 80px;left: 10px;">Massa ultricies mi quis hendrerit. Ac
+                ut consequat semper viverra <br><br> nam. Libero id faucibus nisl tincidunt eget nullam non nisi est.
+                Arcu <br><br> odio ut sem nulla. Amet tellus cras adipiscing enim. Et magnis dis <br><br> parturient
+                montes. Imperdiet sed euismod nisi porta lorem.
+            </p>
+            <div class="f4">Image by <span class="f5">freepik</span></div>
+            <button class="f6">LEARN MORE</button>
+        </div>
+        <div class="f7">
+            <img src="a14.jpg" alt="" width="400px" height="400px" style="border-radius: 100%;">
+        </div>
+        <div class="f8"></div>
+        <div class="ds">
+            <h1 class="f9">Building Projects Group</h1>
+            <p class="f10"> Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A lacus
+                vestibulum sed arcu non. Dolor <br><br> magna eget est lorem ipsum dolor sit amet consectetur. Mauris
+                pellentesque pulvinar pellentesque habitant morbi <br><br> tristique senectus. Nec feugiat nisl pretium
+                fusce id.Justo laoreet sit amet cursus sit amet. Porta non pulvinar neque <br><br> laoreet suspendisse
+                interdum consectetur libero.</p>
+        </div>
+        <div class="f11">Image from <span class="f12">Freepik</span></div>
+        <button class="f13">LEARN MORE</button>
+        <div class="f14"></div>
+
+    </div>
+    <div class="g1">
+        <div class="g2">
+            <h1 style="font-size: 50px; color: white; font-weight: bolder;">Contact Us</h1><br><br>
+            <div style="font-size: large; color: white;">Sample text. Click to select the text box. Click again or
+                double click to start editing the text.</div><br><br><br>
+            <ul type="disc" style="font-size: larger; color: white; font-weight: bold;">
+                <li>65 Street, Network City, NYPD</li>
+                <li>Which don’t Look Even Slightly Believable</li>
+                <li>+1 222 545 55 44</li>
+            </ul>
+        </div>
+        <div class="g3">
+            <form action="backend.php">
+
+                Name: <br>
+                <input type="text" placeholder="Enter your name" required>
+                <br> <br>
+
+                Message: <br>
+                <input type="text" placeholder=" Enter your message" required><br><br>
+                <button style="background-color:  rgb(244, 119, 73); color: white;">SUBMIT</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="h1">
+        <div style="color: white;position: relative; top: 50px;
+        left: 420px;">Пример текста. Кликните, чтобы выбрать текстовый блок. <br> Кликните еще раз или сделайте двойной клик, чтобы <br> начать редактирование текста.</div>
+
+
+         <div style="text-align: center; position: relative; top: 180px;
+         left:0px;"> <span> <a href="https://nicepage.com/website-templates"
+            target="_blank" class="max"> Website
+            Templates </a></span> <span style="color: aliceblue;"> created with </span><span><a
+            href="https://nicepage.com/" target="_blank" class="max">Website
+            Builder Software.</a>
+    </span>
+</div>  
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        .main{
+            height: 850px;
+            width: 100%;
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: darkcyan;
+            margin: 10px;
+        }
+
+        @media (max-width:700px){
+            .box1{
+                width: 100px;
+                height: 200px;
+                background-color: red;
+                font-size: xx-large;
+                font-weight: bold;
+            }
+        }
+
+        
+        @media (min-width:700px) and (max-width:900px){
+            .box2{
+                width: 100px;
+                height: 200px;
+                background-color: red;
+                font-size: xx-large;
+                font-weight: bold;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box box1">Lorem.</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+   </div>
+</body>
+</html>
